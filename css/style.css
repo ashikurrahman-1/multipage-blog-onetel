@@ -177,6 +177,7 @@ nav{
     object-fit: cover;
     opacity: 0.8;
     transition: opacity 0.5s;
+    cursor: zoom-in;
 }
 .gallery img:hover{
     /* transform: scale(1.2); */
