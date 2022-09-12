@@ -160,12 +160,12 @@ nav{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
-.gallery-top{
+.common{
     width: 60%;
     text-align: center;
     margin: 0 auto 50px;
 }
-.gallery-top p{
+.common p{
     font-size: 15px;
     color: #7D7B7D;
     letter-spacing: 1px;
@@ -285,4 +285,76 @@ nav{
 }
 .footer-bottom-container ul li a:hover{
     background-color: #D54AB6;
+}
+
+/* About page started */
+.about-home{
+    background-image: url(../media/about-header.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.crew{
+    margin: 100px 0;
+}
+.crew-bottom{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 30px;
+}
+.crews{
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+.crews h3{
+    margin: 20px 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+.crews h4{
+    color: #D54AB6;
+    font-weight: bold;
+}
+.crews p{
+    margin: 15px 0;
+    line-height: 22px;
+    font-size: 15px;
+    color: #7D7B7D;
+}
+.crew-bottom img{
+    width: 100%;
+    object-fit: cover;
+}
+hr{
+    border: 1px solid #333333;
+}
+
+/* progress section */
+#progress{
+    margin: 100px 0;
+}
+.progress{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    column-gap: 50px;
+}
+.progress h2{
+    margin: 10px 0 20px;
+}
+.progress p{
+    font-size: 15px;
+    color: #7D7B7D;
+}
+.progress-right .bar:nth-child(2n){
+    margin: 30px 0;
+}
+.progress-right .bar-name{
+    display: flex;
+    justify-content: space-between;
+}
+.progress-right input{
+    width: 100%;
+    height: 10px;
+    border-radius: 50px;
 }
