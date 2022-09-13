@@ -48,10 +48,7 @@ nav{
 .navbar .menu a:hover{
     color: orange;
 }
-.navbar .menu a:hover.active{
-    background-color: transparent;
-}
-.navbar .menu a.active{
+.navbar .menu a:hover{
     background-color: rgb(54, 54, 54);
 }
 
@@ -353,8 +350,70 @@ hr{
     display: flex;
     justify-content: space-between;
 }
-.progress-right input{
+.progress-right progress{
     width: 100%;
     height: 10px;
-    border-radius: 50px;
+    border: none;
+}
+
+/* Portfolio section */
+
+.portfolio-home{
+    background-image: url(../media/portfolio-header.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* contact section */
+
+.contact-home{
+    background-image: url(../media/contact-header.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+#get{
+    margin: 100px 0;
+}
+#get form{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    column-gap: 30px;
+}
+#get form input, #get form textarea{
+    width: 100%;
+}
+form input[type='text'], form input[type='email'], form textarea{
+    padding: 10px;
+    background-color: #333;
+    border: 0;
+    margin-top: 10px;
+    font-size: 16px;
+}
+#get form input[type='submit']{
+    width: 100px;
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 2px solid #FFFDFF;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+form h3{
+    margin: 15px 0;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+form p{
+    letter-spacing: 1px;
+}
+.location{
+    margin-top: 80px;
+}
+.location h3{
+    font-size: 28px;
+    margin-bottom: 20px;
 }
