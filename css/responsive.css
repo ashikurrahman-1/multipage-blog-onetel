@@ -1,0 +1,90 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+@media all and (max-width: 576px) {
+    .container{
+        width: 92%;
+    }
+    .navbar{
+        width: 92%;
+        padding: 0 20px 0 0;
+    }
+    .home{
+        padding: 0 20px;
+    }
+    .home div{
+        margin: 0;
+    }
+    .feature{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    .startup{
+        flex-wrap: wrap;
+    }
+    .common{
+        width: 90%;
+    }
+    
+    .footer-bottom-container ul li a{
+        padding: 8px;
+    }
+    
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media all and (max-width: 768px) {
+    
+    .home div{
+        margin: 0;
+    }
+    .feature .f-one{
+        order: 2;
+    }
+    .feature .f-three{
+        order: 3;
+    }
+    
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media all and (max-width: 992px) {
+    nav .nav-right{
+        position: fixed;
+        top: 83px;
+        right: -40%;
+        background-color: brown;
+        padding: 10px 10px;
+        /* display: none; */
+        transition: 0.5s ease-in-out;
+    }
+    nav .nav-right .menu{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+    
+    .navbar .menu a{
+        display: inline-block;
+        padding: 10px 20px;
+    }
+    .navbar .menu a:hover{
+        border-radius: 8px;
+    }
+    nav .bars{
+        display: block;
+    }
+    nav input:checked ~ .nav-right{
+        /* display: block; */
+        right: 4%;
+    }
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+@media all and (max-width: 1200px) {
+    
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
